@@ -1,0 +1,19 @@
+{
+  "name": "kind-or-crude",
+  "version": "0.0.1",
+  "description": "A social experiment",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "vivensio",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3",
+    "twitter": "^1.7.0"
+  },
+  "keywords": [
+    "twitter", "experiments", "streaming", "kind", "crude"
+  ]
+}

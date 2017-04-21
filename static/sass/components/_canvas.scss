@@ -1,0 +1,24 @@
+.canvas-wrap {
+    position: relative;
+    background: azure;
+    height: 90vh;
+    canvas {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+#good-canvas {
+    left: 0;
+    background-color: #ECEFF1;
+}
+#bad-canvas {
+    left: 50%;
+    background-color: #CFD8DC;
+}
+
+body.painting canvas {
+    display: block;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kind or crude</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Fredoka+One|Pangolin" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script async src="/static/js/script.js"></script>
+</head>
+<body class="">
+    <div class="board">
+        <div class="board-bar">
+            <input type="button" class="btn-close-board" value="&#8592;"/>
+            <div class="board-bar-left">
+                <span>KIND</span>
+            </div>
+            <div class="board-bar-right">
+                <span>CRUDE</span>
+            </div>
+        </div>
+        <div class="canvas-wrap"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="heading">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="happy-face" width="64" height="64" viewBox="0 0 64 64"><circle fill="#FFDD67" cx="32" cy="32" r="30"/><circle fill="#664E27" cx="20.5" cy="26.592" r="5"/><circle fill="#664E27" cx="43.5" cy="26.592" r="5"/><path fill="#664E27" d="M44.584 40.279c-8.11 5.656-17.107 5.623-25.168 0-.971-.677-1.846.495-1.188 1.578 2.457 4.047 7.418 7.65 13.771 7.65s11.313-3.604 13.771-7.65c.659-1.083-.216-2.254-1.186-1.578z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="sad-face" width="64" height="64" viewBox="0 0 64 64"><circle fill="#FFDD67" cx="32" cy="32" r="30"/><circle fill="#664E27" cx="20.5" cy="26.591" r="5"/><circle fill="#664E27" cx="43.5" cy="26.591" r="5"/><path fill="#664E27" d="M23.011 47.624c5.793-4.8 12.22-4.771 17.978 0 .693.573 1.318-.421.848-1.339-1.755-3.434-5.299-6.492-9.837-6.492s-8.081 3.059-9.836 6.492c-.472.918.153 1.912.847 1.339z"/></svg>
+                </div>
+                <div class="title">
+                    <span>kind</span>
+                    <span><span>or</span></span>
+                    <span>crude</span>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description-inner">
+                <p>This is a social experiment to figure out how people are talking on twitter right now.</p>
+                <br/>
+                <p>This application fetches LIVE tweets from twitter stream and depending upon the words in the tweet decides if a tweet belongs to 'kind' or 'crude' category.</p>
+                <br/>
+                <div class="description-legend">
+                    <span class="description-legend--title">
+                        <span class="dot">&#x25cf; </span>
+                        <span>
+                            Kind Words : 
+                            <div class="description-legend--words">love, happy, beautiful</div>
+                        </span>
+                    </span>
+                </div>
+                <div class="description-legend">
+                    <span class="description-legend--title">
+                        <span class="dot dot--red">&#x25cf; </span>
+                        <span>
+                            Crude Words : 
+                            <div class="description-legend--words">f__k, s__t, b___h</div>
+                        </span>
+                    </span>
+                </div>
+                <br/>
+                <p> Click on the button below to see the tweets paint the canvas in real time. </p>
+            </div>
+            <div class="btn-wrap">
+                <input type="button" class="btn-start" value="Go!" title="Go back"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

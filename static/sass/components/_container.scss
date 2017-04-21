@@ -1,0 +1,34 @@
+@import "modules/variables";
+
+.container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #249ae2;
+    height: 100%;
+}
+.container:before, .container:after {
+    content: '';
+    position: fixed;
+    height: 1em;
+    left:0;
+    right: 0;
+    background-color: white;
+}
+.container:before {
+    top: 0;
+}
+.container:after {
+    bottom: 0;
+}
+body.painting .container {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    .container {
+        height: $container-height;
+        flex-flow: row nowrap;
+    }
+}

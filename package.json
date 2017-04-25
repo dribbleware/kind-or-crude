@@ -6,10 +6,13 @@
   "license": "MIT",
   "author": "vivensio",
   "repository": {
-    "url": ""
+    "url": "https://github.com/dribbleware/kind-or-crude"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "sass": "sass --watch static/sass:static/css"
   },
   "dependencies": {
-    "express": "^4.15.2",
     "socket.io": "^1.7.3",
     "twitter": "^1.7.0"
   },

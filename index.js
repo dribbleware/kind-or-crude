@@ -6,6 +6,7 @@ var app = require('http').createServer(handler),
     keys = require('./keys');
 
 app.listen(1337);
+console.log('Serving at http://localhost:1337');
 
 var contentTypesByExtention = {
   'html': 'text/html',
@@ -15,7 +16,6 @@ var contentTypesByExtention = {
 
 
 function handler (req, res) {
-
   var filePath = req.url;
 
   if(filePath == '/') {
@@ -36,14 +36,13 @@ function handler (req, res) {
       res.end(data);
     }
   });
-
 }
 
 var twit = new twitter({
-  consumer_key: keys.consumer_key,
-  consumer_secret: keys.consumer_secret,
-  access_token_key: keys.access_token_key,
-  access_token_secret: keys.access_token_secret
+  consumer_key: keys.CONSUMER_KEY,
+  consumer_secret: keys.CONSUMER_SECRET,
+  access_token_key: keys.ACCESS_TOKEN_KEY,
+  access_token_secret: keys.ACCESS_TOKEN_SECRET
 });
 
 var tweet = io.of('tweet');

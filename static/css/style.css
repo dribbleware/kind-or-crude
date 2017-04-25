@@ -258,6 +258,32 @@ body.painting .board {
 body.painting canvas {
   display: block; }
 
+.footer {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  padding: 1em;
+  background-color: transparent;
+  color: darkgoldenrod;
+  transition: all 250ms linear;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem; }
+  .footer a {
+    color: darkgoldenrod;
+    text-decoration: none; }
+  .footer:hover {
+    background-color: rgba(245, 183, 44, 0.7);
+    color: whitesmoke; }
+    .footer:hover a {
+      color: #121212; }
+
+@media (max-width: 1024px) {
+  .footer {
+    color: #2a698f;
+    left: auto;
+    padding: 0; }
+    .footer:hover {
+      background-color: transparent; } }
 * {
   margin: 0;
   padding: 0; }
